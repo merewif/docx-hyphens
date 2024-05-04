@@ -9759,19 +9759,17 @@ const SpaceType = {
   DEFAULT: "default",
   PRESERVE: "preserve"
 };
-var FootnoteRestartLocation = /* @__PURE__ */ ((FootnoteRestartLocation2) => {
-  FootnoteRestartLocation2["Continuous"] = "continuous";
-  FootnoteRestartLocation2["EachSection"] = "eachSect";
-  FootnoteRestartLocation2["EachPage"] = "eachPage";
-  return FootnoteRestartLocation2;
-})(FootnoteRestartLocation || {});
-var FootnotePositioningLocation$1 = /* @__PURE__ */ ((FootnotePositioningLocation2) => {
-  FootnotePositioningLocation2["PageBottom"] = "pageBottom";
-  FootnotePositioningLocation2["BeneathText"] = "beneathText";
-  FootnotePositioningLocation2["SectionEnd"] = "sectEnd";
-  FootnotePositioningLocation2["DocumentEnd"] = "docEnd";
-  return FootnotePositioningLocation2;
-})(FootnotePositioningLocation$1 || {});
+const FootnoteRestartLocation = {
+  CONTINUOUS: "continuous",
+  EACH_SECTION: "eachSect",
+  EACH_PAGE: "eachPage"
+};
+const FootnotePositioningLocation$1 = {
+  PAGE_BOTTOM: "pageBottom",
+  BENEATH_TEXT: "beneathText",
+  SECTION_END: "sectEnd",
+  DOCUMENT_END: "docEnd"
+};
 class TextAttributes extends XmlAttributeComponent {
   constructor() {
     super(...arguments);
